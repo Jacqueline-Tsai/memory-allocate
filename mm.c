@@ -3,10 +3,10 @@
  * @brief A 64-bit struct-based implicit free list memory allocator
  *
  * This file implements a dynamic memory allocator for a heap using an implicit
- *free list with block coalescing. It includes functions for initializing the
- *heap, allocating memory, freeing memory, and reallocating memory blocks. The
- *allocator is designed to manage memory efficiently while maintaining
- *alignment, minimizing fragmentation, and maximizing throughput.
+ * free list with block coalescing. It includes functions for initializing the
+ * heap, allocating memory, freeing memory, and reallocating memory blocks. The
+ * allocator is designed to manage memory efficiently while maintaining
+ * alignment, minimizing fragmentation, and maximizing throughput.
  *
  *************************************************************************
  *
