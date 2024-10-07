@@ -19,7 +19,7 @@ To successfully build and test the allocator, follow these steps:
    make
    ```
 
-3. **Run Tests**  
+2. **Run Tests**  
    Execute the driver with a small test trace:  
    ```
    ./mdriver -V -f traces/malloc.rep
@@ -30,22 +30,24 @@ To successfully build and test the allocator, follow these steps:
    ```  
    The ```-V``` option provides helpful tracing information.
 
-5. **Debugging**  
+3. **Debugging**  
    For testing with debugging enabled, run:  
    ```
    ./mdriver-dbg
    ```
 
-7. **Testing 64-bit Address Handling**  
+4. **Testing 64-bit Address Handling**  
    To verify the code's handling of 64-bit addresses:  
    ```
    ./mdriver-emulate
    ```  
    Ensure that utilization numbers match those obtained from the regular driver, noting that timing data will be zero.
 
-9. **MemorySanitizer Check**  
+5. **MemorySanitizer Check**  
    To check for uninitialized memory usage, execute:  
-   ```./mdriver-uninit```
+   ```
+   ./mdriver-uninit
+   ```
 
 ## Structure
 - ```mm.c```: Implicit-list allocator (recommended starting point).
