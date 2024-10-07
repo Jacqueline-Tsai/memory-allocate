@@ -32,14 +32,18 @@ To successfully build and test the allocator, follow these steps:
 
 5. **Debugging**  
    For testing with debugging enabled, run:  
-   ```./mdriver-dbg```
+   ```
+   ./mdriver-dbg
+   ```
 
-6. **Testing 64-bit Address Handling**  
+7. **Testing 64-bit Address Handling**  
    To verify the code's handling of 64-bit addresses:  
-   ```./mdriver-emulate```  
+   ```
+   ./mdriver-emulate
+   ```  
    Ensure that utilization numbers match those obtained from the regular driver, noting that timing data will be zero.
 
-7. **MemorySanitizer Check**  
+9. **MemorySanitizer Check**  
    To check for uninitialized memory usage, execute:  
    ```./mdriver-uninit```
 
