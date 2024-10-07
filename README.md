@@ -15,25 +15,27 @@ To successfully build and test the allocator, follow these steps:
 
 1. **Build the Driver**  
    Run the following command in the terminal:  
-   `make`
+   ```
+   make
+   ```
 
-2. **Run Tests**  
+3. **Run Tests**  
    Execute the driver with a small test trace:  
    `./mdriver -V -f traces/malloc.rep`  
    To see a list of available driver flags, use:  
    `./mdriver -h`  
    The `-V` option provides helpful tracing information.
 
-3. **Debugging**  
+4. **Debugging**  
    For testing with debugging enabled, run:  
    `./mdriver-dbg`
 
-4. **Testing 64-bit Address Handling**  
+5. **Testing 64-bit Address Handling**  
    To verify the code's handling of 64-bit addresses:  
    `./mdriver-emulate`  
    Ensure that utilization numbers match those obtained from the regular driver, noting that timing data will be zero.
 
-5. **MemorySanitizer Check**  
+6. **MemorySanitizer Check**  
    To check for uninitialized memory usage, execute:  
    `./mdriver-uninit`
 
